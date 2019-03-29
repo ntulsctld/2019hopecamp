@@ -1,1 +1,1 @@
-# 2019hopecamp
+# 2019HopeCamp

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2019 HopeCamp</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="2019camp.css" media="all" />
+<link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 700px)" href="example.css" />
+<body>
+<div class="frame_cover">
+    <div class="title1"><div>2019</div><div>希望新生營</div>
+        <div class="title2">今年夏天，一起來溪頭避暑吧！</div>
+    </div>
+    <img src="xitou_01.jpg" style="width:100%; height:440px" />    
+</div>
+<div class="frame_menu">
+    <div id="menu_btn" type="butoon" onclick="clickAll()" class="btnMenu">MENU</div>
+</div>
+<div id ="button_bar" class="frame_button" style="display: none">
+    <div id="home_btn" type="button" onclick="changeToHome()" class="btnFinger">HOME</div>
+    <div id="itn_btn" type="button" onclick="changeToItinery()" class="btnFinger">營隊流程</div>
+    <div id="act_btn" type="button" onclick="changeToAct()" class="btnFinger">活動特色</div>
+    <div id="team_btn" type="button" onclick="changeToTeam()" class="btnFinger">企劃團隊</div> 
+    <div id="app_btn" type="button" onclick="changeToApply()" class="btnFinger">我要報名</div>
+</div>
+<div class="frame_body">
+    <div id="home_page" class="frame_home">
+        <div class="col_left">
+            <img src="xitou_home.jpg" class= "pic" />
+        </div>
+        <div class="col_right">
+            從現在開始，你即將展開一場華麗的冒險，
+            踏上旅途前，你必須先通過這場夏日集訓，
+            在這裡，你將會獲得最完整的裝備與自信，
+            遇見攜手闖關打怪的超強夥伴與智慧嚮導。<br/>
+            <br/>
+            六月底，我們在雲霧繚繞的溪頭山林等你!<br/>
+        </div>
+    </div>
+    <div id="itinery_page" class="frame_itinerary">
+        <div class="col_itinery">
+            <div class="each_itinery">
+                <div class="head_itinery">06/25 Day1</div>
+            </div>            
+            <div class="each_itinery">
+                <div class="itinery_time">09:00</div>
+                <span class="itinery_content">臺北出發（臺大校門口）</span>
+            </div>
+            <div class="each_itinery">
+                <div class="itinery_time">11:00</div>
+                <span class="itinery_content">臺中出發（烏日高鐵站）</span>
+            </div>
+            <div class="each_itinery">
+                <div class="itinery_time">12:00</div>
+                <span class="itinery_content">抵達溪頭教育園區</span>
+            </div>
+            <div class="each_itinery">
+                <div class="itinery_time">12:30</div>
+                <span class="itinery_content">午餐</span>
+            </div> 
+            <div class="each_itinery">
+                <div class="itinery_time">13:30</div>
+                <span class="itinery_content">始業式</span>
+            </div>       
+            <div class="each_itinery">
+                <div class="itinery_time">14:00</div>
+                <span class="itinery_content">大學咖啡館</span>
+            </div>  
+            <div class="each_itinery">
+                <div class="itinery_time">17:00</div>
+                <span class="itinery_content">入住</span>
+            </div> 
+            <div class="each_itinery">
+                <div class="itinery_time">18:00</div>
+                <span class="itinery_content">晚餐</span>
+            </div> 
+            <div class="each_itinery">
+                <div class="itinery_time">19:00</div>
+                <span class="itinery_content">歡迎晚會</span>
+            </div>    
+            <div class="each_itinery">
+                <div class="itinery_time">21:00</div>
+                <span class="itinery_content">師生夜談</span>
+            </div> 
+            <div class="each_itinery">
+                <div class="itinery_time">22:00</div>
+                <span class="itinery_content">盥洗就寢</span>
+            </div> 
+        </div>
+        <div class="col_itinery">
+            <div class="each_itinery_right">
+                <div class="head_itinery_right">06/26 Day2</div>
+            </div> 
+            <div class="each_itinery_right">
+                <div class="itinery_time">07:00</div>
+                <span class="itinery_content">晨起盥洗</span>
+            </div>
+            <div class="each_itinery_right">
+                <div class="itinery_time">07:40</div>
+                <span class="itinery_content">退房</span>
+            </div>
+            <div class="each_itinery_right">
+                <div class="itinery_time">08:00</div>
+                <span class="itinery_content">早餐</span>
+            </div>  
+            <div class="each_itinery_right">
+                <div class="itinery_time">09:00</div>
+                <span class="itinery_content">森林導覽</span>
+            </div>
+            <div class="each_itinery_right">
+                <div class="itinery_time">11:30</div>
+                <span class="itinery_content">結業式</span>
+            </div> 
+            <div class="each_itinery_right">
+                <div class="itinery_time">12:00</div>
+                <span class="itinery_content">午餐</span>
+            </div> 
+            <div class="each_itinery_right">
+                <div class="itinery_time">14:00</div>
+                <span class="itinery_content">離開溪頭教育園區</span>
+            </div> 
+            <div class="each_itinery_right">
+                <div class="itinery_time">15:00</div>
+                <span class="itinery_content">臺中解散（烏日高鐵站）</span>
+            </div>
+            <div class="each_itinery_right">
+                <div class="itinery_time">17:00</div>
+                <span class="itinery_content">臺北解散（臺大校門口）</span>
+            </div>
+        </div>
+    </div>
+    <div id="act_page" class="frame_act">
+        <div class="eachAct">
+            <div>
+            <div class="leftAct_col">
+                <img src="outdoor01.jpg" class="otdSlide otdCurrent" />
+                <img src="outdoor02.jpg" class="otdSlide" />
+                <img src="outdoor03.jpg" class="otdSlide" />
+                <img src="outdoor04.jpg" class="otdSlide" /> 
+                <img src="outdoor05.jpg" class="otdSlide" />  
+            </div>  
+            <div class="nextPic">
+                <button id="nextPic" class="picBtn" onclick="preOutdoorPic()">Prev</button>
+                <button id="prePic" class="picBtn" onclick="nextOutdoorPic()">Next</button>
+            </div>
+            </div>    
+            <div class="rightAct_col">
+                <div class="actTitle">
+                貼近大自然的戶外活動
+                </div>
+                <div> 
+                2017 我們悠遊在百花盛開的梅峰農場，
+                2018 我們從宜蘭草坡上遠眺蘭陽平原，
+                2019 我們一起前往溪頭，享受一場森林芬多精吧！
+                這裡有遼闊草皮、挺拔巨木、還有熱情的人們，
+                今年夏天將充滿樹木的氣息以及希望夥伴的回憶！
+                </div>
+            </div>
+        </div>
+        <div class="eachAct">
+            <div>
+            <div class="leftAct_col">
+                <img src="course01.jpg" class="cosSlide cosCurrent" />
+                <img src="course02.jpg" class="cosSlide" />
+                <img src="course03.jpg" class="cosSlide" />
+                <img src="course04.jpg" class="cosSlide" /> 
+                <img src="course05.jpg" class="cosSlide" />    
+            </div>    
+            <div class="nextPic">
+                <button id="nextPic" class="picBtn" onclick="preCoursePic()">Prev</button>
+                <button id="prePic" class="picBtn" onclick="nextCoursePic()">Next</button>
+            </div>
+            </div>
+            <div class="rightAct_col">
+                <div class="actTitle">
+                不可不知的大學求生守則
+                </div>
+                <div> 
+                進入大學的那一刻起，就是自由的開端！
+                不過，同時也代表你開始得對自己的選擇完全負責，
+                讀書選課、人際互動、活動社團...讓人眼花撩亂，
+                先別緊張，這裡有學長姐和老師傳授你大學完全攻略，
+                讓你游刃有餘，所有校園技能一次點滿！
+                </div>
+            </div>
+        </div>
+        <div class="eachAct">
+            <div>
+            <div class="leftAct_col">
+                <img src="night01.jpg" class="nightSlide nightCurrent" />
+                <img src="night02.jpg" class="nightSlide" />
+                <img src="night03.jpg" class="nightSlide" />
+                <img src="night04.jpg" class="nightSlide" /> 
+                <img src="night05.jpg" class="nightSlide" />    
+            </div>    
+            <div class="nextPic">
+                <button id="nextPic" class="picBtn" onclick="preNightPic()">Prev</button>
+                <button id="prePic" class="picBtn" onclick="nextNightPic()">Next</button>
+            </div>
+            </div>
+            <div class="rightAct_col">
+                <div class="actTitle">
+                笑點哭點滿滿的難忘夜晚
+                </div>
+                <div> 
+                白天還掛著生疏的禮貌和微笑嗎？
+                夜已深，不如來一場大解放吧！
+                這時候你才知道你的同伴們有多麼臥虎藏龍，
+                也才知道自己的淚腺原來那麼發達，
+                我們一起度過這個歡笑和感動交織的夜晚！
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="team_page" class="frame_team">
+        <div class="each_team">
+            <div class="team_member">
+                <div class="member_profile">
+                    <img id="memberClear" src="member02.jpg" class="member_pic" />
+                    <div id="perPic01" class="memberText">
+                        <div>大家好，我是謝老闆～<br/>
+                            住在大鳳梨裡的不是我<br/>
+                            是海綿寶寶
+                        </div>    
+                    </div>
+                </div>
+                <div class="member_name">總籌兼雜工蟹老闆</div>
+            </div>
+            <div class="team_member">
+                <div class="member_profile">
+                    <img id="memberClear" src="member01.jpg" class="member_pic" />
+                    <div id="perPic01" class="memberText">
+                        <div>我是風暴降生黃欒雅、<br/>
+                            使喚別人者，<br/>
+                            希望的女王！</div>    
+                    </div>
+                </div>
+                <div class="member_name">技能是指使別人做事的雅姐</div>
+            </div>              
+        </div>
+        <div class="each_team">
+            <div class="team_member">
+                <div class="member_profile">
+                    <img id="memberClear" src="member03.jpg" class="member_pic" />
+                    <div id="perPic01" class="memberText">
+                        <div>不要亂叫阿姨！<br/>
+                            叫我酒國一朵花～</div>    
+                    </div>
+                </div>
+                <div class="member_name">希望大總管曼昱</div>
+            </div>
+            <div class="team_member">
+                <div class="member_profile">
+                    <img id="memberClear" src="member04.jpg" class="member_pic" />
+                    <div id="perPic01" class="memberText">
+                        <div>家榮是工具人</div>    
+                    </div>
+                </div>
+                <div class="member_name">家養小精靈家榮</div>
+            </div>              
+        </div>
+        <div class="each_team">
+            <div class="team_member">
+                <div class="member_profile">
+                    <img id="memberClear" src="member05.jpg" class="member_pic" />
+                    <div id="perPic01" class="memberText">
+                        <div>
+                        A Million Dreams <br/>
+                        are Keeping Me Awake.<br/>
+                        <br/>
+                        (羊: 咩~) <br/>
+                        </div>    
+                    </div>
+                </div>
+                <div class="member_name">Kaya與她的快樂小綿羊</div>
+            </div>
+            <div class="team_member">
+                <div class="member_profile">
+                    <img id="memberClear" src="member06.jpg" class="member_pic" />
+                    <div id="perPic01" class="memberText">
+                        <div>我們能用人類的語言溝通嗎？</div>    
+                    </div>
+                 </div>
+                <div class="member_name">厭世の佳姍</div>
+            </div>              
+        </div>
+    </div>
+    <div id="apply_page" class="frame_apply">
+        <div class="each_apply">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWwKBfTiqV34Laz9uj4EFh7w4y-FXhvAr2o72vcHcPtYQ5sw/viewform?usp=sf_link"
+        style="text-decoration:none;">
+            <div id="apply_junior" class="col_apply">我是<br/>新生</div>            
+        </a>
+        </div>
+        <div class="each_apply">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeg0rgUxkiHuu8ydC311UcujNrJ9Y9iJfSzU2PN2osdZ7uvjQ/viewform?usp=sf_link"
+        style="text-decoration:none;">       
+            <div id="apply_senior" class="col_apply">我是<br/>舊生</div>
+        </a> 
+        </div>
+        <div class="each_apply">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSflP2Oi-GVKLOWuFraSXlCw2e9PnG_20Mdy-KlZmlzbgRS-aA/viewform?usp=sf_link"
+        style="text-decoration:none;">  
+        <div id="apply_ta" class="col_apply">我是<br/>助教</div>
+        </a>
+        </div>
+    </div>
+ </div>
+
+    <div class="page_end">
+        <div style="padding: 20px; text-align: center">
+        <div>版權所有＠國立臺灣大學</div>
+        <div>教學發展中心 學習促進組</div>
+        <div class="col_end">
+            <div style="margin-right:20px; margin-left:20px;">聯絡電話 02-33663367 #553</div>
+            <div style="margin-right:20px; margin-left:20px;">聯絡信箱<a href="mailto:ntulsctld@ntu.edu.tw"> ntulsctld@ntu.edu.tw</a> </div>
+        </div>
+        <br/>
+        <div>Designed by SamHsieh</div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+function get(id){
+    return window.document.getElementById(id)
+    };
+
+let pagehm = window.document.getElementById("home_page");
+let pageitn = window.document.getElementById("itinery_page");
+let pageact = window.document.getElementById("act_page");
+let pageteam = window.document.getElementById("team_page");
+let pageapp = window.document.getElementById("apply_page");
+let hm = get("home_btn");
+let itn = get("itn_btn");
+let act = get("act_btn");
+let team = get("team_btn");
+let app = get("app_btn");
+hm.className = "current-tag";
+pagehm.style.display = "block";
+pagehm.style.display = "flex";
+pageitn.style.display = "none";
+pageact.style.display = "none";
+pageteam.style.display = "none";
+pageapp.style.display="none";
+
+function changeToHome(){
+    hm.className = "current-tag";
+    itn.className = "btnFinger";
+    act.className = "btnFinger";
+    team.className = "btnFinger";
+    app.className = "btnFinger";
+    if (pagehm.style.display = "none"){
+        pagehm.style.display = "block";
+        pagehm.style.display = "flex";
+        pageitn.style.display = "none";
+        pageact.style.display="none";
+        pageteam.style.display = "none";
+        pageapp.style.display="none";
+        }else{
+            pagehm.style.display = "none";
+        };
+};
+
+function changeToItinery(){
+    hm.className = "btnFinger";
+    itn.className = "current-tag";
+    act.className = "btnFinger";
+    team.className = "btnFinger";
+    app.className = "btnFinger";
+    if (pageitn.style.display="none"){
+        pageitn.style.display="block";
+        pageitn.style.display="flex";
+        pagehm.style.display="none";
+        pageact.style.display="none";
+        pageteam.style.display = "none";
+        pageapp.style.display="none";
+    }else{
+        pageitn.style.display="none";
+    };
+};
+
+function changeToAct(){
+    hm.className = "btnFinger";
+    itn.className = "btnFinger";
+    act.className = "current-tag";
+    team.className = "btnFinger";
+    app.className = "btnFinger";
+    if (pageact.style.display="none"){
+        pageact.style.display="block";
+        //pageact.style.display="flex";
+        pagehm.style.display="none";
+        pageitn.style.display="none";
+        pageteam.style.display = "none";
+        pageapp.style.display="none";
+    }else{
+        pageact.style.display="none";
+    };
+}
+
+function changeToTeam(){
+    hm.className = "btnFinger";
+    itn.className = "btnFinger";
+    act.className = "btnFinger";
+    team.className = "current-tag";
+    app.className = "btnFinger";
+    if (pageteam.style.display="none"){
+        pageteam.style.display="block";
+        //pageteam.style.display="flex";
+        pagehm.style.display="none";
+        pageitn.style.display="none";
+        pageact.style.display="none";
+        pageapp.style.display="none";
+    }else{
+        pageteam.style.display="none";
+    };
+}
+
+function changeToApply(){
+    hm.className = "btnFinger";
+    itn.className = "btnFinger";
+    act.className = "btnFinger";
+    team.className = "btnFinger";
+    app.className = "current-tag";
+    if (pageapp.style.display="none"){
+        pageapp.style.display="block";
+        pageapp.style.display="flex";
+        pagehm.style.display="none";
+        pageitn.style.display="none";
+        pageact.style.display="none";
+        pageteam.style.display="none";
+    }else{
+        pageapp.style.display="none";
+    };
+}
+</script>
+
+<script>
+let btnBar = window.document.getElementById("button_bar");
+function clickAll(){
+    if(btnBar.style.display=="none"){
+        btnBar.style.display="flex";
+    }else{
+        btnBar.style.display="none";
+    }
+}
+</script>
+
+<script>
+    let slidesOtd, indexOtd;
+    window.addEventListener("DOMContentLoaded", function(){
+        slidesOtd=document.querySelectorAll(".otdSlide");
+        indexOtd=1;
+        });
+    function nextOutdoorPic(){
+        slidesOtd[indexOtd].classList.remove("otdCurrent");
+        indexOtd=(indexOtd+1)%slidesOtd.length;
+        slidesOtd[indexOtd].classList.add("otdCurrent");
+    };
+    function preOutdoorPic(){
+        slidesOtd[indexOtd].classList.remove("otdCurrent");
+        if(indexOtd == 0){
+            indexOtd=slidesOtd.length;
+        }else{
+            indexOtd = indexOtd;
+        };
+        indexOtd = indexOtd-1;
+        slidesOtd[indexOtd].classList.add("otdCurrent");
+    };
+
+    let slidesCos, indexCos;
+    window.addEventListener("DOMContentLoaded", function(){
+        slidesCos=document.querySelectorAll(".cosSlide");
+        indexCos=1;
+        });
+    function nextCoursePic(){
+        slidesCos[indexCos].classList.remove("cosCurrent");
+        indexCos=(indexCos+1)%slidesCos.length;
+        slidesCos[indexCos].classList.add("cosCurrent");
+    };
+    function preCoursePic(){
+        slidesCos[indexCos].classList.remove("cosCurrent");
+        if(indexCos == 0){
+            indexCos=slidesCos.length;
+        }else{
+            indexCos = indexCos;
+        };
+        indexCos = indexCos-1;
+        slidesCos[indexCos].classList.add("cosCurrent");
+    };
+    
+    let slidesNight, indexNight;
+    window.addEventListener("DOMContentLoaded", function(){
+        slidesNight=document.querySelectorAll(".nightSlide");
+        indexNight=1;
+        });
+    function nextNightPic(){
+        slidesNight[indexNight].classList.remove("nightCurrent");
+        indexNight=(indexNight+1)%slidesNight.length;
+        slidesNight[indexNight].classList.add("nightCurrent");
+    };
+    function preNightPic(){
+        slidesNight[indexNight].classList.remove("nightCurrent");
+        if(indexNight == 0){
+            indexNight=slidesNight.length;
+        }else{
+            indexNight = indexNight;
+        };
+        indexNight = indexNight-1;
+        slidesNight[indexNight].classList.add("nightCurrent");
+    };
+
+</script>
+
+</head>
+</html>
+
+
